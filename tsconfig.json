@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016",
+      "es2017"
+    ],
+    "pretty": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "inlineSources": false,
+    "declaration": false,
+    "outDir": "dist",
+    "rootDir": ".",
+    "plugins": [
+      {}
+    ],
+    "skipDefaultLibCheck": true,
+    "noUnusedLocals": false,
+    "allowUnusedLabels": true,
+    "noUnusedParameters": false
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

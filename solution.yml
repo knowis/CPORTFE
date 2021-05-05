@@ -1,0 +1,12 @@
+appAcronym: "CPORTFE"
+appName: "Customer Portal UI Frontend"
+appIcon: "quidditch"
+appDescription: "Serves the UI frontend of the Customer Portal"
+appType: "CUSTOM"
+category: "EXPERIENCE_API"
+creationTs: "1620222623884"
+creator: "Namrata Gupta"
+creatorId: "9cc2a3c7-4108-4270-84c3-4d45a8c793b2"
+domainTags: ["tutorial"]
+language: "TYPESCRIPT"
+basePackage: ""
