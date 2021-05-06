@@ -1,0 +1,97 @@
+{
+  "messages": [
+    {
+      "id": "m001",
+      "user": "user1",
+      "text": [
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+      ],
+      "sender": "World Bank",
+      "timestamp": "2021-01-30T09:48:38.017Z"
+    },
+    {
+      "id": "m002",
+      "user": "user1",
+      "text": [
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+      ],
+      "sender": "World Bank",
+      "timestamp": "2021-01-30T09:53:38.017Z"
+    }
+  ],
+  "credits": [
+    {
+      "id": 1,
+      "user": 1,
+      "name": "Consumer Loan",
+      "purpose": "Financing a new consumer good",
+      "amount": 12000,
+      "currency": "USD",
+      "duration": "36",
+      "effective_interest_rate": 0.0183,
+      "monthly_rate": 342.82,
+      "start": "2020-01-30",
+      "end": "2023-01-30"
+    },
+    {
+      "id": 2,
+      "user": 1,
+      "name": "Consumer Loan",
+      "purpose": "Financing a new mobile phone",
+      "amount": 1000,
+      "currency": "EUR",
+      "duration": "12",
+      "effective_interest_rate": 0.0112,
+      "monthly_rate": 83.84,
+      "start": "2021-02-04",
+      "end": "2022-02-04"
+    }
+  ],
+  "exchangerates": [
+    {
+      "id": "USD",
+      "rates": {
+        "EUR": 0.824950,
+        "GBP": 0.730033,
+        "CHF": 0.890625,
+        "ARS": 87.302834
+      }
+    },
+    {
+      "id": "EUR",
+      "rates": {
+        "USD": 1.213840,
+        "GBP": 0.886126,
+        "CHF": 1.081159,
+        "ARS": 105.975238
+      }
+    },
+    {
+      "id": "GBP",
+      "rates": {
+        "USD": 1.369814,
+        "EUR": 1.128477,
+        "CHF": 1.220039,
+        "ARS": 119.590727
+      }
+    },
+    {
+      "id": "CHF",
+      "rates": {
+        "USD": 1.122763,
+        "EUR": 0.924951,
+        "GBP": 0.819646,
+        "ARS": 98.022067
+      }
+    },
+    {
+      "id": "ARS",
+      "rates": {
+        "USD": 0.011454,
+        "EUR": 0.009436,
+        "GBP": 0.008362,
+        "CHF": 0.010202
+      }
+    }
+  ]
+}
