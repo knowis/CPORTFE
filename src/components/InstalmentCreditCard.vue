@@ -39,7 +39,7 @@ export default {
   methods: {
     deleteCredit (id) {
       this.$axios
-        .delete(`${backendSettings.host}/credits/${id}`, {
+        .delete(`${backendSettings.host}/credit/credits/${id}`, {
           headers: {
             authorization: `Bearer ${this.$store.state.oidcStore.id_token}`
           }

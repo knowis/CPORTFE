@@ -109,7 +109,7 @@ export default {
   methods: {
     calcInterest () {
       this.$axios
-        .get(`${backendSettings.host}/rates/${this.duration}?amount=${this.amount}`, {
+        .get(`${backendSettings.host}/rateIn/rates/${this.duration}?amount=${this.amount}`, {
           headers: {
             authorization: `Bearer ${this.$store.state.oidcStore.id_token}`
           }
@@ -123,7 +123,7 @@ export default {
     },
     apply () {
       this.$axios
-        .post(`${backendSettings.host}/credits`, {
+        .post(`${backendSettings.host}/credit/credits`, {
           user: this.oidcUser.preferred_username,
           name: 'Consumer Loan',
           purpose: this.purpose,

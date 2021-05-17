@@ -29,7 +29,7 @@ export default {
   methods: {
     refresh (callback) {
       this.$axios
-        .get(`${backendSettings.host}/messages?user=${this.oidcUser.preferred_username}`, {
+        .get(`${backendSettings.host}/v1/messages?user=${this.oidcUser.preferred_username}`, {
           headers: {
             authorization: `Bearer ${this.$store.state.oidcStore.id_token}`
           }
