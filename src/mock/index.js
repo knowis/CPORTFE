@@ -16,9 +16,10 @@ export function makeServer ({ environment = 'development' } = {}) {
 
     routes () {
       // this.namespace = `${backendSettings.host}`
-      this.get(`${backendSettings.host}/v1/messages`, schema => {
-        return schema.messages.all()
-      })
+      // this.get(`${backendSettings.host}/v1/messages/:user`, schema => {
+      //   const user = request.params.user
+      //   return schema.messages.all()
+      // })
       this.get(`${backendSettings.host}/credit/credits`, schema => {
         return schema.credits.all()
       })
