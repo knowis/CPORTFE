@@ -5,9 +5,6 @@ const https = require('https')
 const app = express()
 const port = 8443
 const certDir = '/etc/knowis/security/servicecert'
-// const beforeAllMiddleware = require('./beforeAll');
-
-// app.use(beforeAllMiddleware);
 
 app.get('/CPORTFE', (req, res) => {
   res.send('Welcome to your custom solution!')
