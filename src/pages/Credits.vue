@@ -17,7 +17,7 @@
 
 <script>
 import InstalmentCreditCard from 'components/InstalmentCreditCard.vue'
-// import { backendSettings } from 'src/config/backend'
+import { backendSettings } from 'src/config/backend'
 import { mapGetters } from 'vuex'
 var chunk = require('chunk')
 
