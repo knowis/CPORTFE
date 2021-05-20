@@ -15,11 +15,12 @@ export function makeServer ({ environment = 'development' } = {}) {
     },
 
     routes () {
-      // this.namespace = `${backendSettings.host}`
-      // this.get(`${backendSettings.host}/v1/messages/:user`, schema => {
-      //   const user = request.params.user
-      //   return schema.messages.all()
-      // })
+      this.namespace = `${backendSettings.host}`
+      this.get(`${backendSettings.host}/v1/messages/:user`, (schema, request) => {
+        const user = request.params.user
+        console.log(`recall user messages with user ${user}`)
+        return schema.messages.all()
+      })
       this.get(`${backendSettings.host}/credit/credits`, schema => {
         return schema.credits.all()
       })

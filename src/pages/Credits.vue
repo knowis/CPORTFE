@@ -35,6 +35,7 @@ export default {
     ])
   },
   mounted () {
+    console.log('------------here-------------', this.$store.state)
     this.$axios
       .get(`${backendSettings.host}/credit/credits?user=${this.oidcUser.preferred_username}`, {
         headers: {
