@@ -1,4 +1,4 @@
 export const backendSettings = {
-  host: 'https://int-br.apps.openshift-03.knowis.cloud/CPORTBE/api/v1'
+  host: 'https://qa-br.apps.openshift-03.knowis.cloud:443/CPORTBE/api'
   // host: 'http://localhost:3000'
 }

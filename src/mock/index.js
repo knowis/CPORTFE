@@ -15,18 +15,20 @@ export function makeServer ({ environment = 'development' } = {}) {
     },
 
     routes () {
-      // this.namespace = `${backendSettings.host}`
-      this.get(`${backendSettings.host}/messages`, schema => {
+      this.namespace = `${backendSettings.host}`
+      this.get(`${backendSettings.host}/v1/messages/:user`, (schema, request) => {
+        const user = request.params.user
+        console.log(`recall user messages with user ${user}`)
         return schema.messages.all()
       })
-      this.get(`${backendSettings.host}/credits`, schema => {
+      this.get(`${backendSettings.host}/credit/credits`, schema => {
         return schema.credits.all()
       })
-      this.delete(`${backendSettings.host}/credits/:id`, (schema, request) => {
+      this.delete(`${backendSettings.host}/credit/credits/:id`, (schema, request) => {
         const id = request.params.id
         console.log(`recall credit with id ${id}`)
       })
-      this.get(`${backendSettings.host}/rates/:duration`, (schema, request) => {
+      this.get(`${backendSettings.host}/rateIn/rates/:duration`, (schema, request) => {
         const duration = request.params.duration
         const amount = request.queryParams.amount
 
@@ -59,7 +61,7 @@ export function makeServer ({ environment = 'development' } = {}) {
           monthlyRate: rate
         }
       })
-      this.post(`${backendSettings.host}/credits/`, (schema, request) => {
+      this.post(`${backendSettings.host}/credit/credits/`, (schema, request) => {
         const cred = JSON.parse(request.requestBody)
         cred.id = schema.credits.all().length + 1
 
@@ -75,10 +77,10 @@ export function makeServer ({ environment = 'development' } = {}) {
 
         return schema.credits.create(cred)
       })
-      this.post(`${backendSettings.host}/testdata/`, () => {
+      this.post(`${backendSettings.host}/v1/testdata/`, () => {
 
       })
-      this.delete(`${backendSettings.host}/testdata/`, () => {
+      this.delete(`${backendSettings.host}/v1/testdata/`, () => {
 
       })
     }

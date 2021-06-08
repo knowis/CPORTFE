@@ -47,7 +47,7 @@ export default {
     clearAll () {
       this.progressClearAll = true
       this.$axios
-        .delete(`${backendSettings.host}/testdata`, {
+        .delete(`${backendSettings.host}/v1/testdata`, {
           headers: {
             authorization: `Bearer ${this.$store.state.oidcStore.id_token}`
           }
@@ -75,7 +75,7 @@ export default {
     generate () {
       this.progressGenerate = true
       this.$axios
-        .post(`${backendSettings.host}/testdata`, {}, {
+        .post(`${backendSettings.host}/v1/testdata`, {}, {
           headers: {
             authorization: `Bearer ${this.$store.state.oidcStore.id_token}`
           }
